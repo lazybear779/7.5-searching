@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        //The number of elements in the ArrayList less than zero
+        //Test case 1
+        ArrayList<Integer> lessthanzero = new ArrayList<>();
+        int[] arrone = {-1, 0, 1};
+        for(int i : arrone){
+            lessthanzero.add(i);
+        }
+       System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
+        //Testcase 2
+        arrone = new int[] {-1, -2, 1};
+        lessthanzero = new ArrayList<>();
+        for (int i : arrone){
+            lessthanzero.add(i);
+        }
+        System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
+        //Testcase 3
+        arrone = new int[] {1, 2, 1};
+        lessthanzero = new ArrayList<>();
+        for (int i : arrone){
+            lessthanzero.add(i);
+        }
+        System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
+        //true if the String is found in the ArrayList and false otherwise
+        ArrayList<String> target = new ArrayList<>();
+        target.add("String");
+
+    }
+}
