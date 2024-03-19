@@ -6,21 +6,21 @@ public class Main {
         //Test case 1
         ArrayList<Integer> lessthanzero = new ArrayList<>();
         int[] arrone = {-1, 0, 1};
-        for(int i : arrone){
+        for (int i : arrone) {
             lessthanzero.add(i);
         }
         System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
         //Testcase 2
-        arrone = new int[] {-1, -2, 1};
+        arrone = new int[]{-1, -2, 1};
         lessthanzero = new ArrayList<>();
-        for (int i : arrone){
+        for (int i : arrone) {
             lessthanzero.add(i);
         }
         System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
         //Testcase 3
-        arrone = new int[] {1, 2, 1};
+        arrone = new int[]{1, 2, 1};
         lessthanzero = new ArrayList<>();
-        for (int i : arrone){
+        for (int i : arrone) {
             lessthanzero.add(i);
         }
         System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
@@ -44,10 +44,74 @@ public class Main {
         target.add("Earth");
         target.add("jupiter");
         target.add("Saturn");
-        System.out.print(SearchingAlgs.targetString(target, "earth"));
+        System.out.println(SearchingAlgs.targetString(target, "earth"));
 
         //true if the same value appears in both ArrayLists and false otherwise
+        //testcase 1
+        ArrayList<Integer> listone = new ArrayList<>();
+        int[] arrthree = {1, 2};
+        for (int i : arrthree) {
+            listone.add(i);
+        }
+        ArrayList<Integer> listtwo = new ArrayList<>();
+        int[] arrfour = {2, 3};
+        for (int i : arrfour) {
+            listtwo.add(i);
+        }
+        System.out.println(SearchingAlgs.compareArrayList(listone, listtwo));
 
+        //testcase 2
+        listone = new ArrayList<Integer>();
+        listtwo = new ArrayList<Integer>();
+        arrthree = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
+        for (int i: arrthree){
+            listone.add(i);
+        }
+        arrfour = new int[] {9, 10};
+        for (int i: arrfour){
+            listtwo.add(i);
+        }
+        System.out.println(SearchingAlgs.compareArrayList(listone, listtwo));
+
+        //testcase 3
+        listone = new ArrayList<Integer>();
+        listtwo = new ArrayList<Integer>();
+        arrthree = new int[] {20, 30, 40, 50, 60, 70, 80, 90, 100};
+        for (int i: arrthree){
+            listone.add(i);
+        }
+        arrfour = new int[] {3, 2, 100};
+        for (int i: arrfour){
+            listtwo.add(i);
+        }
+        System.out.println(SearchingAlgs.compareArrayList(listone, listtwo));
+
+        //The index of the first appearance of the int in the list or -1 if it does not appear in the list.
+        //testcase 1
+        ArrayList<Integer> appearance = new ArrayList<>();
+        int [] arrfive = {1, 2, 3};
+        for(int i : arrfive){
+            appearance.add(i);
+        }
+        System.out.println(SearchingAlgs.appearance(appearance, 2));
+
+        //testcase 2
+        appearance = new ArrayList<Integer>();
+        arrfive = new int[] {4, 5, 6, 3, 2};
+        for(int i : arrfive){
+            appearance.add(i);
+        }
+        System.out.println(SearchingAlgs.appearance(appearance, 6));
+
+        //testcase 3
+        appearance = new ArrayList<Integer>();
+        arrfive = new int[] {99, 3, 7, 3, 4};
+        for(int i : arrfive){
+            appearance.add(i);
+        }
+        System.out.println(SearchingAlgs.appearance(appearance, 100));
+
+        //The index of the first appearance of the int in the array or -1 if it does not appear in the array.
 
     }
 }
