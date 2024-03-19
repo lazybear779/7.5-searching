@@ -9,7 +9,7 @@ public class Main {
         for(int i : arrone){
             lessthanzero.add(i);
         }
-       System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
+        System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
         //Testcase 2
         arrone = new int[] {-1, -2, 1};
         lessthanzero = new ArrayList<>();
@@ -24,9 +24,30 @@ public class Main {
             lessthanzero.add(i);
         }
         System.out.println("The numbers of num less than zero are : " + SearchingAlgs.lessThanZero(lessthanzero));
+
+
         //true if the String is found in the ArrayList and false otherwise
+        // Testcase 1
         ArrayList<String> target = new ArrayList<>();
         target.add("String");
+        System.out.println(SearchingAlgs.targetString(target, "String"));
+
+        //testcase 2
+        target = new ArrayList<String>();
+        target.add("baanana");
+        target.add("Banan");
+        target.add("baaana");
+        System.out.println(SearchingAlgs.targetString(target, "banana"));
+
+        //testcase 3
+        target = new ArrayList<String>();
+        target.add("Earth");
+        target.add("jupiter");
+        target.add("Saturn");
+        System.out.print(SearchingAlgs.targetString(target, "earth"));
+
+        //true if the same value appears in both ArrayLists and false otherwise
+
 
     }
 }
