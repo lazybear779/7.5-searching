@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Main {
@@ -112,6 +113,15 @@ public class Main {
         System.out.println(SearchingAlgs.appearance(appearance, 100));
 
         //The index of the first appearance of the int in the array or -1 if it does not appear in the array.
-
+        //Testcase 1
+        int[]arrsix = {1, 2, 3};
+        System.out.println(SearchingAlgs.arrayAppearance(arrsix, 2));
+        //Testcase 2
+        arrsix = new int[] {7, 8, 9};
+        System.out.println(SearchingAlgs.arrayAppearance(arrsix, 4));
+        //Testcase 3
+        arrsix = new int[] {20, 30, 100};
+        System.out.println(SearchingAlgs.arrayAppearance(arrsix, 8));
     }
 }
+
